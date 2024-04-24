@@ -1335,7 +1335,7 @@ namespace Zoo
             }
             if (!string.IsNullOrEmpty(brw))
             {
-                command.Parameters.Add("@NewBerat", SqlDbType.Decimal).Value = brw;
+                command.Parameters.Add("@NewBerat", SqlDbType.NVarChar).Value = brw;
             }
 
             // Menambahkan parameter untuk kondisi WHERE
@@ -1725,7 +1725,7 @@ namespace Zoo
             }
             if (!string.IsNullOrEmpty(tglpr))
             {
-                command.Parameters.Add("@Newtglpr", SqlDbType.NVarChar).Value = tglpr;
+                command.Parameters.Add("@Newtglpr", SqlDbType.Date).Value = Convert.ToDateTime(tglpr);
             }
             if (!string.IsNullOrEmpty(Kdhw))
             {
@@ -1876,7 +1876,7 @@ namespace Zoo
             }
             if (!string.IsNullOrEmpty(tglpm))
             {
-                command.Parameters.Add("@Newtglpm", SqlDbType.NVarChar).Value = tglpm;
+                command.Parameters.Add("@Newtglpm", SqlDbType.Date).Value = Convert.ToDateTime(tglpm);
             }
             if (!string.IsNullOrEmpty(dgpm))
             {
