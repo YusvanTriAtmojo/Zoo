@@ -1335,7 +1335,7 @@ namespace Zoo
             }
             if (!string.IsNullOrEmpty(brw))
             {
-                command.Parameters.Add("@NewBerat", SqlDbType.Decimal).Value = Convert.ToDecimal(brw);
+                command.Parameters.Add("@NewBerat", SqlDbType.Decimal).Value = brw;
             }
 
             // Menambahkan parameter untuk kondisi WHERE
