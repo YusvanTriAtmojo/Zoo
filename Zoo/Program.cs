@@ -1283,7 +1283,7 @@ namespace Zoo
             }
             if (!string.IsNullOrEmpty(jkHw))
             {
-                updates.Add("Jenis_kelamin = @NewJenisKelamin");
+                updates.Add("Jk_hewan = @NewJenisKelamin");
             }
             if (!string.IsNullOrEmpty(tglHw))
             {
